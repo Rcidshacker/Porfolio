@@ -84,10 +84,17 @@ export function ShaderPlane({
 
   useFrame((state) => {
     if (mesh.current) {
+      // --- SPEED CONTROLS ---
+      // 0.2 means 20% speed (Very Slow)
+      // Change 0.2 to 0.5 for medium speed, or 1.0 for fast speed
+      const speed = 0.5; 
+      
       // @ts-ignore
-      mesh.current.material.uniforms.time.value = state.clock.elapsedTime
+      mesh.current.material.uniforms.time.value = state.clock.elapsedTime * speed
+      
+      // We also slow down the pulsing intensity
       // @ts-ignore
-      mesh.current.material.uniforms.intensity.value = 1.0 + Math.sin(state.clock.elapsedTime * 2) * 0.3
+      mesh.current.material.uniforms.intensity.value = 1.0 + Math.sin(state.clock.elapsedTime * speed * 2) * 0.3
     }
   })
 
@@ -116,8 +123,8 @@ export function EnergyRing({
 
   useFrame((state) => {
     if (mesh.current) {
-      mesh.current.rotation.z = state.clock.elapsedTime
-      mesh.current.material.opacity = 0.5 + Math.sin(state.clock.elapsedTime * 3) * 0.3
+      mesh.current.rotation.z = state.clock.elapsedTime * 0.2 // Also slowed down the ring
+      mesh.current.material.opacity = 0.5 + Math.sin(state.clock.elapsedTime * 0.5) * 0.3
     }
   })
 

@@ -16,21 +16,23 @@ function App() {
   if (!isMounted) return null;
 
   return (
-    <main className="min-h-screen bg-black text-neutral-200 selection:bg-emerald-500/30 selection:text-emerald-200 relative overflow-x-hidden font-sans">
+    // REMOVED "bg-black" so the background is visible
+    <main className="min-h-screen text-neutral-200 selection:bg-emerald-500/30 selection:text-emerald-200 relative overflow-x-hidden font-sans">
       
-      {/* 3D Background */}
+      {/* 3D Background - Fixed position covers the whole screen */}
       <Background3D />
       
-      {/* GLOBAL NOISE TEXTURE - Kept for texture overlay on top of 3D */}
+      {/* GLOBAL NOISE TEXTURE */}
       <div 
-        className="fixed inset-0 z-0 opacity-10 pointer-events-none mix-blend-overlay" 
+        className="fixed inset-0 z-0 opacity-20 pointer-events-none mix-blend-overlay" 
         style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5'/%3E%3C/svg%3E")` }}
       ></div>
 
       <Hero />
 
       {/* --- PROJECTS SECTION --- */}
-      <section id="projects" className="relative z-10 py-24 bg-neutral-950/80 backdrop-blur-sm border-t border-neutral-900">
+      {/* Changed bg-neutral-950/80 to bg-black/30 so it is see-through */}
+      <section id="projects" className="relative z-10 py-24 bg-black/30 backdrop-blur-md border-t border-white/10">
         <div className="container mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Selected Works</h2>
@@ -69,7 +71,8 @@ function App() {
       </section>
 
       {/* --- EXPERTISE / FEATURES SECTION --- */}
-      <section className="py-24 border-t border-neutral-900 bg-neutral-950 relative z-10">
+      {/* Changed bg-neutral-950 to transparent so background continues */}
+      <section className="py-24 border-t border-white/10 bg-black/40 backdrop-blur-md relative z-10">
         <div className="container mx-auto px-6">
           <div className="mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">Technical Arsenal</h2>
