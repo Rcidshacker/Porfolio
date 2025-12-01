@@ -87,4 +87,7 @@ Clone the project and start the development server in seconds.
 ├── 📄 App.tsx         # Main application entry
 └── 📄 vite.config.ts  # Vite configuration
 
-<div align="center"> <p>Crafted with 🖤 by Ruchit Das</p> <p>© 2025 All Rights Reserved</p> </div>
+<p align="center">
+  Crafted with 🖤 by Ruchit Das<br>
+  © 2025 All Rights Reserved
+</p>
