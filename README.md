@@ -12,6 +12,7 @@
   [![Resume](https://img.shields.io/badge/📄_View_Resume-FF5722?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1qHVlOSP53cTe6fq6ODfOA3-j96dgk2eu/view?usp=sharing)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ruchit-das-3b6a8a252)
   [![Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ruchitdas36@gmail.com)
+  [![Google AI Studio](https://img.shields.io/badge/✨_Built_with-Google_AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com/)
 
 </div>
 
@@ -35,14 +36,14 @@ A **Dark Futurist** portfolio designed to bridge the gap between raw algorithms 
 
 ## 🛠️ Tech Stack
 
-Built with the modern web's most powerful tools.
+Built with the modern web's most powerful tools and accelerated by AI.
 
 | Domain | Technologies |
 | :--- | :--- |
 | **Core** | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) |
 | **Styling** | ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) ![Lucide](https://img.shields.io/badge/Lucide_Icons-F05032?style=flat&logo=adobelist&logoColor=white) |
 | **3D & Animation** | ![Three.js](https://img.shields.io/badge/Three.js-black?style=flat&logo=three.js&logoColor=white) ![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) ![Spline](https://img.shields.io/badge/Spline-Design-pink?style=flat) |
-| **Deployment** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
+| **Development** | ![Google AI Studio](https://img.shields.io/badge/Google_AI_Studio-4285F4?style=flat&logo=google&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
 
 ---
 
@@ -87,7 +88,6 @@ Clone the project and start the development server in seconds.
 ├── 📄 App.tsx         # Main application entry
 └── 📄 vite.config.ts  # Vite configuration
 ```
-<p align="center">
-  Crafted with 🖤 by Ruchit Das<br>
-  © 2025 All Rights Reserved
-</p>
+<p align="center"> Crafted with 🖤 by Ruchit Das
+
+© 2025 All Rights Reserved </p>
