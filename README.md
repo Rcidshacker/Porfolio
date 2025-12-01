@@ -86,7 +86,7 @@ Clone the project and start the development server in seconds.
 ├── 📁 lib             # Utilities (Tailwind merge, clsx)
 ├── 📄 App.tsx         # Main application entry
 └── 📄 vite.config.ts  # Vite configuration
-
+```
 <p align="center">
   Crafted with 🖤 by Ruchit Das<br>
   © 2025 All Rights Reserved
