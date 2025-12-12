@@ -4,6 +4,7 @@ import { ProjectCard } from './components/ProjectCard';
 import { FeaturesSectionWithHoverEffects } from './components/ui/FeaturesSection';
 import { FooterSection } from './components/ui/footer-section';
 import { Background3D } from './components/Background3D';
+import { UIIdeasSection } from './components/UIIdeasSection';
 import { Brain, Cpu, Layers } from 'lucide-react';
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
   return (
     // REMOVED "bg-black" so the background is visible
     <main className="min-h-screen text-neutral-200 selection:bg-emerald-500/30 selection:text-emerald-200 relative overflow-x-hidden font-sans">
-      
+
       {/* 3D Background - Fixed position covers the whole screen */}
       <Background3D />
-      
+
       {/* GLOBAL NOISE TEXTURE */}
-      <div 
-        className="fixed inset-0 z-0 opacity-20 pointer-events-none mix-blend-overlay" 
+      <div
+        className="fixed inset-0 z-0 opacity-20 pointer-events-none mix-blend-overlay"
         style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5'/%3E%3C/svg%3E")` }}
       ></div>
 
@@ -40,7 +41,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProjectCard 
+            <ProjectCard
               title="MHA Flow"
               category="AI & Optimization Library"
               description="A production-ready Python library featuring 130+ metaheuristic algorithms. Includes a secure Streamlit web app with AI-powered recommendations."
@@ -49,7 +50,7 @@ function App() {
               icon={<Brain className="w-8 h-8 text-purple-400" />}
             />
 
-            <ProjectCard 
+            <ProjectCard
               title="Nutria Health"
               category="Healthcare AI"
               description="Personalized diet plan generator for Diabetes and PCOS patients. Uses FastAPI pipelines and React frontend for seamless user experience."
@@ -58,7 +59,7 @@ function App() {
               icon={<Cpu className="w-8 h-8 text-emerald-400" />}
             />
 
-            <ProjectCard 
+            <ProjectCard
               title="Air Canvas"
               category="Computer Vision"
               description="Gesture-controlled digital canvas using OpenCV and MediaPipe. Integrated Depth-Anything V2 for high-accuracy spatial tracking."
@@ -80,11 +81,14 @@ function App() {
               A comprehensive suite of tools and methodologies leveraged to build intelligent, scalable systems.
             </p>
           </div>
-          
+
           <FeaturesSectionWithHoverEffects />
-          
+
         </div>
       </section>
+
+      {/* --- UI IDEAS SECTION --- */}
+      <UIIdeasSection />
 
       {/* --- FOOTER --- */}
       <FooterSection />
