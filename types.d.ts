@@ -1,5 +1,6 @@
-import React from 'react'
+import '@react-three/fiber'
 
+// Augment JSX.IntrinsicElements with React Three Fiber elements
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -13,3 +14,6 @@ declare global {
     }
   }
 }
+
+// Make this file a module
+export { }

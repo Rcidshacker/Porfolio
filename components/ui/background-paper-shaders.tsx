@@ -2,7 +2,10 @@ import { useRef, useMemo } from "react"
 import { useFrame } from "@react-three/fiber"
 import * as THREE from "three"
 
-// Augment JSX.IntrinsicElements to include React Three Fiber elements
+// Import R3F types to extend JSX.IntrinsicElements  
+import type { } from '@react-three/fiber';
+
+// R3F JSX type declarations
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -82,16 +85,23 @@ export function ShaderPlane({
     [color1, color2],
   )
 
+  // Frame counter for throttling
+  const frameCount = useRef(0);
+
   useFrame((state) => {
+    // Throttle to 30fps (skip every other frame)
+    frameCount.current++;
+    if (frameCount.current % 2 !== 0) return;
+
     if (mesh.current) {
       // --- SPEED CONTROLS ---
       // 0.2 means 20% speed (Very Slow)
       // Change 0.2 to 0.5 for medium speed, or 1.0 for fast speed
-      const speed = 0.5; 
-      
+      const speed = 0.5;
+
       // @ts-ignore
       mesh.current.material.uniforms.time.value = state.clock.elapsedTime * speed
-      
+
       // We also slow down the pulsing intensity
       // @ts-ignore
       mesh.current.material.uniforms.intensity.value = 1.0 + Math.sin(state.clock.elapsedTime * speed * 2) * 0.3

@@ -14,8 +14,10 @@ export function LiquidEffectAnimation({ id = 'liquid-canvas' }: LiquidEffectAnim
     useEffect(() => {
         if (!canvasRef.current) return
 
-        const canvasId = id;
-        const appKey = `__liquidApp_${canvasId}`;
+        // SANITIZATION: Ensure ID only contains safe characters to prevent XSS
+        const safeId = id.replace(/[^a-zA-Z0-9_-]/g, '');
+        const canvasId = safeId;
+        const appKey = `__liquidApp_${safeId}`;
         let mounted = true;
 
         // Load the script dynamically

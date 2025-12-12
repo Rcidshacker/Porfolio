@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Sparkles, Plus, Copy, Check, X } from 'lucide-react';
-import { Background3D } from '../components/Background3D';
+// Background3D moved to index.tsx for route persistence
 import { LiquidEffectAnimation } from '../components/ui/liquid-effect-animation';
 
 // Integration prompt for copy-paste
@@ -141,14 +141,7 @@ export function UIIdeas() {
 
     return (
         <main className="min-h-screen text-neutral-200 selection:bg-emerald-500/30 selection:text-emerald-200 relative overflow-x-hidden font-sans">
-            {/* 3D Background */}
-            <Background3D />
-
-            {/* GLOBAL NOISE TEXTURE */}
-            <div
-                className="fixed inset-0 z-0 opacity-20 pointer-events-none mix-blend-overlay"
-                style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5'/%3E%3C/svg%3E")` }}
-            ></div>
+            {/* Background3D and noise texture are now in index.tsx for route persistence */}
 
             {/* Header */}
             <header className="relative z-10 py-8 px-6">
