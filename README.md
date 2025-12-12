@@ -1,5 +1,6 @@
 <div align="center">
-  <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=50&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=1200&height=100&lines=Ruchit+Das;Architecting+Intelligence;Generative+AI+%E2%80%A2+Computer+Vision;Full+Stack+Engineering" alt="Typing SVG" />
 
   <br />
   
