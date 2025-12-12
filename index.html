@@ -1,182 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruchit Das | AI Engineer & Creative Developer</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Space Grotesk"', 'sans-serif'],
-              display: ['"Syne"', 'sans-serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/png logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruchit Das | AI Engineer & Creative Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+          },
+          colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
+            primary: {
+              DEFAULT: "hsl(var(--primary))",
+              foreground: "hsl(var(--primary-foreground))",
             },
-            colors: {
-              border: "hsl(var(--border))",
-              input: "hsl(var(--input))",
-              ring: "hsl(var(--ring))",
-              background: "hsl(var(--background))",
-              foreground: "hsl(var(--foreground))",
-              primary: {
-                DEFAULT: "hsl(var(--primary))",
-                foreground: "hsl(var(--primary-foreground))",
-              },
-              secondary: {
-                DEFAULT: "hsl(var(--secondary))",
-                foreground: "hsl(var(--secondary-foreground))",
-              },
-              destructive: {
-                DEFAULT: "hsl(var(--destructive))",
-                foreground: "hsl(var(--destructive-foreground))",
-              },
-              muted: {
-                DEFAULT: "hsl(var(--muted))",
-                foreground: "hsl(var(--muted-foreground))",
-              },
-              accent: {
-                DEFAULT: "hsl(var(--accent))",
-                foreground: "hsl(var(--accent-foreground))",
-              },
-              popover: {
-                DEFAULT: "hsl(var(--popover))",
-                foreground: "hsl(var(--popover-foreground))",
-              },
-              card: {
-                DEFAULT: "hsl(var(--card))",
-                foreground: "hsl(var(--card-foreground))",
-              },
-              neutral: {
-                950: '#0a0a0a', // Custom deep black
-              },
-              sidebar: {
-                  DEFAULT: "hsl(var(--sidebar-background))",
-                  foreground: "hsl(var(--sidebar-foreground))",
-                  primary: "hsl(var(--sidebar-primary))",
-                  "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-                  accent: "hsl(var(--sidebar-accent))",
-                  "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-                  border: "hsl(var(--sidebar-border))",
-                  ring: "hsl(var(--sidebar-ring))",
-              },
+            secondary: {
+              DEFAULT: "hsl(var(--secondary))",
+              foreground: "hsl(var(--secondary-foreground))",
             },
-            borderRadius: {
-              lg: "var(--radius)",
-              md: "calc(var(--radius) - 2px)",
-              sm: "calc(var(--radius) - 4px)",
+            destructive: {
+              DEFAULT: "hsl(var(--destructive))",
+              foreground: "hsl(var(--destructive-foreground))",
             },
-            animation: {
-              spotlight: "spotlight 2s ease .75s 1 forwards",
-              pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              "accordion-down": "accordion-down 0.2s ease-out",
-              "accordion-up": "accordion-up 0.2s ease-out",
+            muted: {
+              DEFAULT: "hsl(var(--muted))",
+              foreground: "hsl(var(--muted-foreground))",
             },
-            keyframes: {
-              spotlight: {
-                "0%": { opacity: 0, transform: "translate(-72%, -62%) scale(0.5)" },
-                "100%": { opacity: 1, transform: "translate(-50%,-40%) scale(1)" },
-              },
-              pulse: {
-                "0%, 100%": { opacity: 1 },
-                "50%": { opacity: .5 },
-              },
-              "accordion-down": {
-                from: { height: "0" },
-                to: { height: "var(--radix-accordion-content-height)" },
-              },
-              "accordion-up": {
-                from: { height: "var(--radix-accordion-content-height)" },
-                to: { height: "0" },
-              },
-            }
+            accent: {
+              DEFAULT: "hsl(var(--accent))",
+              foreground: "hsl(var(--accent-foreground))",
+            },
+            popover: {
+              DEFAULT: "hsl(var(--popover))",
+              foreground: "hsl(var(--popover-foreground))",
+            },
+            card: {
+              DEFAULT: "hsl(var(--card))",
+              foreground: "hsl(var(--card-foreground))",
+            },
+            neutral: {
+              950: '#0a0a0a', // Custom deep black
+            },
+            sidebar: {
+              DEFAULT: "hsl(var(--sidebar-background))",
+              foreground: "hsl(var(--sidebar-foreground))",
+              primary: "hsl(var(--sidebar-primary))",
+              "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+              accent: "hsl(var(--sidebar-accent))",
+              "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+              border: "hsl(var(--sidebar-border))",
+              ring: "hsl(var(--sidebar-ring))",
+            },
+          },
+          borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+          },
+          animation: {
+            spotlight: "spotlight 2s ease .75s 1 forwards",
+            pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            "accordion-down": "accordion-down 0.2s ease-out",
+            "accordion-up": "accordion-up 0.2s ease-out",
+          },
+          keyframes: {
+            spotlight: {
+              "0%": { opacity: 0, transform: "translate(-72%, -62%) scale(0.5)" },
+              "100%": { opacity: 1, transform: "translate(-50%,-40%) scale(1)" },
+            },
+            pulse: {
+              "0%, 100%": { opacity: 1 },
+              "50%": { opacity: .5 },
+            },
+            "accordion-down": {
+              from: { height: "0" },
+              to: { height: "var(--radix-accordion-content-height)" },
+            },
+            "accordion-up": {
+              from: { height: "var(--radix-accordion-content-height)" },
+              to: { height: "0" },
+            },
           }
         }
       }
-    </script>
-    <style>
-      :root {
-        --background: 0 0% 0%; /* Black */
-        --foreground: 0 0% 98%; /* White */
-        
-        --card: 0 0% 3%;
-        --card-foreground: 0 0% 98%;
- 
-        --popover: 0 0% 3%;
-        --popover-foreground: 0 0% 98%;
- 
-        --primary: 158 64% 52%; /* Emerald 500 */
-        --primary-foreground: 0 0% 0%;
- 
-        --secondary: 0 0% 12%; /* Neutral 800 */
-        --secondary-foreground: 0 0% 98%;
- 
-        --muted: 0 0% 12%;
-        --muted-foreground: 0 0% 60%; /* Neutral 400 */
- 
-        --accent: 0 0% 12%;
-        --accent-foreground: 0 0% 98%;
- 
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
- 
-        --border: 0 0% 12%;
-        --input: 0 0% 12%;
-        --ring: 158 64% 52%;
- 
-        --radius: 0.5rem;
+    }
+  </script>
+  <style>
+    :root {
+      --background: 0 0% 0%;
+      /* Black */
+      --foreground: 0 0% 98%;
+      /* White */
 
-        /* Sidebar variables (mapped to HSL for compatibility with existing config) */
-        --sidebar-background: 0 0% 98%;
-        --sidebar-foreground: 240 5.3% 26.1%;
-        --sidebar-primary: 240 5.9% 10%;
-        --sidebar-primary-foreground: 0 0% 98%;
-        --sidebar-accent: 240 4.8% 95.9%;
-        --sidebar-accent-foreground: 240 5.9% 10%;
-        --sidebar-border: 220 13% 91%;
-        --sidebar-ring: 217.2 91.2% 59.8%;
-      }
+      --card: 0 0% 3%;
+      --card-foreground: 0 0% 98%;
 
-      .dark {
-        --sidebar-background: 240 5.9% 10%;
-        --sidebar-foreground: 240 4.8% 95.9%;
-        --sidebar-primary: 224.3 76.3% 48%;
-        --sidebar-primary-foreground: 0 0% 100%;
-        --sidebar-accent: 240 3.7% 15.9%;
-        --sidebar-accent-foreground: 240 4.8% 95.9%;
-        --sidebar-border: 240 3.7% 15.9%;
-        --sidebar-ring: 217.2 91.2% 59.8%;
-      }
+      --popover: 0 0% 3%;
+      --popover-foreground: 0 0% 98%;
 
-      body {
-        background-color: #000;
-        color: #e5e5e5;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0a0a0a;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #262626;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #404040;
-      }
-    </style>
+      --primary: 158 64% 52%;
+      /* Emerald 500 */
+      --primary-foreground: 0 0% 0%;
+
+      --secondary: 0 0% 12%;
+      /* Neutral 800 */
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 12%;
+      --muted-foreground: 0 0% 60%;
+      /* Neutral 400 */
+
+      --accent: 0 0% 12%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 12%;
+      --input: 0 0% 12%;
+      --ring: 158 64% 52%;
+
+      --radius: 0.5rem;
+
+      /* Sidebar variables (mapped to HSL for compatibility with existing config) */
+      --sidebar-background: 0 0% 98%;
+      --sidebar-foreground: 240 5.3% 26.1%;
+      --sidebar-primary: 240 5.9% 10%;
+      --sidebar-primary-foreground: 0 0% 98%;
+      --sidebar-accent: 240 4.8% 95.9%;
+      --sidebar-accent-foreground: 240 5.9% 10%;
+      --sidebar-border: 220 13% 91%;
+      --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    .dark {
+      --sidebar-background: 240 5.9% 10%;
+      --sidebar-foreground: 240 4.8% 95.9%;
+      --sidebar-primary: 224.3 76.3% 48%;
+      --sidebar-primary-foreground: 0 0% 100%;
+      --sidebar-accent: 240 3.7% 15.9%;
+      --sidebar-accent-foreground: 240 4.8% 95.9%;
+      --sidebar-border: 240 3.7% 15.9%;
+      --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    body {
+      background-color: #000;
+      color: #e5e5e5;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #262626;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #404040;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -223,8 +234,10 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
